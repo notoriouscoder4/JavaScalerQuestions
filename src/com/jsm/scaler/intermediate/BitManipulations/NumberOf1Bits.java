@@ -16,6 +16,15 @@ public class NumberOf1Bits {
     public static int numSetBits(int A) {
         String str = Integer.toBinaryString(A);
         return str.length() - str.replace("1", "").length();
+
+        /*
+        int total_ones = 0;
+        while (A != 0) {
+            A = A & (A - 1);
+            total_ones++;
+        }
+        return total_ones;
+        */
     }
 
     public static void main(String[] args) {
