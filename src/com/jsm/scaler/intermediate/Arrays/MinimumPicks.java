@@ -25,11 +25,11 @@ public class MinimumPicks {
         int maxEven = Integer.MIN_VALUE;
         int minOdd = Integer.MAX_VALUE;
 
-        for (int i = 0; i < A.length; i++) {
-            if (A[i] > maxEven && A[i] % 2 == 0) {
-                maxEven = A[i];
-            } else if (A[i] < minOdd && A[i] % 2 != 0) {
-                minOdd = A[i];
+        for (int j : A) {
+            if (j > maxEven && j % 2 == 0) {
+                maxEven = j;
+            } else if (j < minOdd && j % 2 != 0) {
+                minOdd = j;
             }
         }
 

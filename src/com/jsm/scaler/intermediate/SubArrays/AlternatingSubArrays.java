@@ -1,6 +1,7 @@
 package com.jsm.scaler.intermediate.SubArrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AlternatingSubArrays {
     /*
@@ -73,6 +74,8 @@ public class AlternatingSubArrays {
     }
 
     public static void main(String[] args) {
-
+        int[] A = {0, 0, 0, 1, 1, 0, 1};
+        int B = 0;
+        System.out.println(Arrays.toString(solve(A, B)));
     }
 }
