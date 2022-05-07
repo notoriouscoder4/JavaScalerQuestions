@@ -1,0 +1,56 @@
+package com.jsm.scaler.advance.BitManipulations;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class SingleNumber {
+    /*
+    Given an array of integers A, every element appears twice except for one. Find that integer that occurs once.
+    NOTE: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+
+    Problem Constraints
+    2 <= |A| <= 2000000
+    0 <= A[i] <= INT_MAX
+
+    Input Format
+    The first and only argument of input contains an integer array A.
+
+    Output Format
+    Return a single integer denoting the single element.
+
+    Example Input:
+    Input 1:
+     A = [1, 2, 2, 3, 1]
+
+    Input 2:
+     A = [1, 2, 2]
+
+    Example Output
+    Output 1:
+     3
+
+    Output 2:
+     1
+
+    Example Explanation:
+    Explanation 1:
+    3 occurs once.
+
+    Explanation 2:
+    1 occurs once.
+    */
+
+    private static int singleNumber(final List<Integer> A) {
+        int ans = 0;
+        for (Integer i : A) {
+            ans = ans ^ i;
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        List<Integer> A = new ArrayList<>(Arrays.asList(1, 2, 2, 3, 1));
+        System.out.println(singleNumber(A));
+    }
+}
