@@ -2,9 +2,7 @@ package com.jsm.scaler.beginner.Arrays;
 
 public class FirstMissingPositiveInteger {
 
-    /* Find the smallest positive missing
-       number in an array that contains
-       both positive and negative integers */
+    /* Find the smallest positive missing number in an array that contains both positive and negative integers */
     public static int firstMissingPositive(int[] A) {
         // First separate positive and
         // negative numbers
