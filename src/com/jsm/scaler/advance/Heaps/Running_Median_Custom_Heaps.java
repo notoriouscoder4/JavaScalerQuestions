@@ -243,6 +243,7 @@ public class Running_Median_Custom_Heaps {
                     }
                 }
             }
+
             output[index++] = maxHeap.peekMax();
         }
         return output;
